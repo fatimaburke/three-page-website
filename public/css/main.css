@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Merriweather');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+div.heroimg{
+ background: url('../img/office.jpg') #ccc;
+ height: 200px;
+ width: 100%;
+}
+.herotxt {
+  font-family: 'Merriweather', serif;
+  color: #fff;
+}
+
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 992px) {
+
+}
