@@ -6,25 +6,76 @@
 body {
   font-family: 'Lato', sans-serif;
 }
+nav {
+  text-align: center;
+}
+nav a {
+  text-decoration: none;
+  font-family: 'Merriweather', serif;
+}
+nav a:hover {
+  color:#df4557;
+}
 div.heroimg{
- background: url('../img/office.jpg') #ccc;
- height: 200px;
- width: 100%;
+ background: url(../img/FBcover.png) center top #ccc;
+ width: 851px;
+ height: 565px;
+ margin: 0 auto;
 }
 .herotxt {
   font-family: 'Merriweather', serif;
   color: #fff;
+  text-align: center;
 }
-
+.info {
+  width: 851px;
+  height:auto;
+  margin: 0 auto;
+}
+.col {
+  width: 50%;
+  padding:10px;
+}
+.right{
+  float: right;
+}
+.left {
+  float: left;
+}
+ footer {
+   text-align: center;
+ }
 
 @media screen and (max-width: 480px) {
-
+  div.heroimg{
+   display: none;
+  }
+  body {
+    color:#fff;
+    background: #131a3c;
+  }
+  nav a {
+    color: #fff;
+  }
 }
 
 @media screen and (max-width: 768px) {
-
+  div.heroimg{
+   background: none  #df4557 !important;
+   width: 90%;
+   height: 565px;
+   margin: 0 auto;
+  }
+  .col {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 992px) {
-
+  div.heroimg{
+   background: url(../img/FBcover.png) center top #ccc;
+   width: 851px;
+   height: 565px;
+   margin: 0 auto;
+  }
 }
