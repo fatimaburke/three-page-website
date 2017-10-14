@@ -2,24 +2,35 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  /* border: 1px #ff0 dashed; */
 }
 body {
   font-family: 'Lato', sans-serif;
 }
+.container {
+  min-height: 90vh;
+}
 nav {
   text-align: center;
+  height: 45px;
+  line-height: 25px;
+  border-bottom: 3px dotted rgba(223, 69, 87, 0.22);
+  margin: 20px;
 }
 nav a {
   text-decoration: none;
   font-family: 'Merriweather', serif;
+  padding-left: 20px;
 }
 nav a:hover {
   color:#df4557;
 }
 div.heroimg{
  background: url(../img/FBcover.png) center top #ccc;
- width: 851px;
- height: 565px;
+ background-size: cover;
+ width: 95vw;
+ height: 415px;
  margin: 0 auto;
 }
 .herotxt {
@@ -28,22 +39,32 @@ div.heroimg{
   text-align: center;
 }
 .info {
-  width: 851px;
-  height:auto;
+  width: 95vw;
+  height: auto;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2,50% 50%);
 }
+
 .col {
-  width: 50%;
-  padding:10px;
+  padding: 15px;
 }
-.right{
-  float: right;
+
+.port {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3,33% 33% 33%);
 }
-.left {
-  float: left;
+.port img {
+  width: 100%;
 }
- footer {
-   text-align: center;
+
+footer {
+  text-align: center;
+  width: 100%;
+  background-color: rgba(225, 74, 83, 0.85);
+  color: #fff;
+  padding: 10px 0px;
  }
 
 @media screen and (max-width: 480px) {
@@ -52,30 +73,37 @@ div.heroimg{
   }
   body {
     color:#fff;
-    background: #131a3c;
+    background-color: #131a3c;
   }
   nav a {
     color: #fff;
   }
+  .info {
+    display: block;
+  }
 }
 
-@media screen and (max-width: 768px) {
-  div.heroimg{
-   background: none  #df4557 !important;
-   width: 90%;
-   height: 565px;
-   margin: 0 auto;
+@media screen and (max-width: 648px) {
+  .portcol {
+    width:100%;
   }
-  .col {
-    width: 100%;
+  .info {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 849px) {
+  div.heroimg{
+    height: 315px;
   }
 }
 
 @media screen and (max-width: 992px) {
   div.heroimg{
    background: url(../img/FBcover.png) center top #ccc;
-   width: 851px;
-   height: 565px;
-   margin: 0 auto;
+   background-size: cover;
+  }
+  .col {
+    width: 100%;
   }
 }
